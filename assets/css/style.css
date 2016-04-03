@@ -1,23 +1,22 @@
 html {
-    background: #1F1F21;
-    color:#ccc;
+    background: #EFEFEF;
+    color: #737171;
 }
 .font, .font * {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 h1, h2 {
     font-family: 'Poiret One', cursive;
-    text-transform: uppercase;
     color: #4294BA;
 }
-h2 span {
-    text-transform: lowercase !important;
+h1 small {
+  font-size: 11px;
 }
 h3 {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    /*text-transform: uppercase;*/
     font-weight: 400;
     color: #1FA6AB;
+    margin-top: 0;
 }
 .lined {
     text-decoration: underline;
@@ -28,40 +27,54 @@ h3 {
   font-weight: 100;
   src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fonts.gstatic.com/s/poiretone/v3/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2'), url(http://fonts.gstatic.com/s/poiretone/v3/HrI4ZJpJ3Fh0wa5ofYMK8b3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
 }
-.hire_me {
-    float: right;
-    color: #4294BA;
-    padding: 2px;
-    text-decoration: none;
-    border-bottom: 1px solid #1FA6AB;
+#projects {
+  margin-top: 1%;
+  padding: 3%;
 }
+#projects .mix {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.nav {
+  margin-top: 10%;
+  line-height: 200%;
+  text-align: center;
+}
+.nav a {
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+  padding: 7px 7px 3px 7px;
+  font-weight: normal;
+  color: #8E8E8E;
+  outline: none;
+}
+
+.nav a.active {
+  border-bottom:1px solid #1FA6AB;
+  color: #1FA6AB;
+}
+
+.links {
+  float: right;
+}
+.links a {
+  text-decoration: none;
+  color: #676767;
+}
+.links a:hover {
+  color: #5A5A5A;
+}
+
 .chrome, .opera {
     padding-left: 35px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     margin-left: 10px;
 }
 .chrome {
-    background: url('../img/chrome.png') no-repeat;
+    background: url('../img/chrome.png') center center no-repeat;
 }
 .opera {
-    background: url('../img/opera.png') no-repeat;
-}
-.links {
-    float: right;
-}
-.projects {
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
-.project {
-    margin-top: 30px;
-    padding-left: 10px; 
-    border-left: 1px solid #4294BA;
-}
-.project p {
-    padding-left: 10px;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    
+    background: url('../img/opera.png') center center no-repeat;
 }
